@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.charlie.startactivityforresulttest.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="연산 선택"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:id="@+id/mainBtnLo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/mainPlusIv"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="24dp"
+            />
+        <ImageView
+            android:id="@+id/mainMinusIv"
+            android:src="@drawable/ic_remove_black_24dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mainResultStringTv"
+        android:text="연산 결과"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/mainBtnLo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/mainResultTv"
+        android:textSize="18sp"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/mainResultStringTv"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/calLo"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <EditText
+            android:id="@+id/calNum1Et"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="24dp"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/calNum2Et"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:inputType="numberDecimal"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calBtn"
+        android:layout_below="@id/calLo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="연산하기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
